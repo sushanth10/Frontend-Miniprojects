@@ -1,4 +1,5 @@
 .card{
+    width: 25%;
     font-size: 1rem;
     margin: 0% 37.5%;
     text-align: center;
@@ -10,13 +11,13 @@
     margin-top: 5px;
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    flex-shrink: inherit;
     width: 100%;
 }
 
 .btn{
     width: 33%;
-    font-size: 1rem;
 }
 
 .winner{
@@ -25,4 +26,11 @@
 
 .loser{
     color: red;
+}
+
+@media(max-width:794px){
+    .btn{
+        width: 100%;
+        font-size: 1rem;
+    }
 }

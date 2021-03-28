@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Scorekeeper</title>
 </head>
-<body>
+<body onload="numberGenerate()">
     <div class="card" style="width:25%">
         <img class="card-img-top" src="assets/table-tennis-shots.jpg" alt="table tennis">
         <div class="card-body">
@@ -16,16 +16,16 @@
         </div>
         <h1><span class="player-1">0</span> to <span class="player-2">0</span></h1>
         Use the buttons below to keep scores<br>
-        <h5>Playing to <select name="score-limit" id="score-limit"></select></h5>
+        <h5>Playing to <select name="score-limit" id="score-limit" onchange="scoreLim()"></select></h5>
         <div class="button-container">
-            <button class="btn btn-success">+1 Player-1</button>
-            <button class="btn btn-primary">+1 Player-2</button>
-            <button class="btn btn-danger">Reset Scores</button>
+            <button class="btn btn-success player-1-btn">+1 Player-1</button>
+            <button class="btn btn-primary player-2-btn">+1 Player-2</button>
+            <button class="btn btn-danger reset-btn">Reset Scores</button>
         </div>
        
     </div>
 
-
+    <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
