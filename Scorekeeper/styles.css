@@ -1,0 +1,28 @@
+.card{
+    font-size: 1rem;
+    margin: 0% 37.5%;
+    text-align: center;
+    line-height: 2.0;
+    word-wrap: normal;
+}
+
+.button-container{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+.btn{
+    width: 33%;
+    font-size: 1rem;
+}
+
+.winner{
+    color: greenyellow;
+}
+
+.loser{
+    color: red;
+}
