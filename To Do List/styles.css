@@ -4,3 +4,36 @@ body{
     background-attachment: fixed;;
     background-image: linear-gradient(to top right, #0061ff, #60efff);
 }
+
+.container{
+    margin: 15% 37.5%;
+    /* border: 1px solid black;
+    border-radius: 10px; */
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    width: inherit;
+    background-color: lightskyblue;
+    margin: 0px;
+    padding: 10px;
+}
+
+li{
+    width: inherit;
+    margin: 0;
+    padding: 5px 2px;
+}
+
+li:nth-of-type(2n){
+    background-color: #e8e8e4;
+}
+
+li:nth-of-type(2n+1){
+    background-color: aliceblue;
+}
