@@ -3,12 +3,27 @@ body{
     background-position: center;
     background-attachment: fixed;;
     background-image: linear-gradient(to top right, #0061ff, #60efff);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container{
     margin: 15% 37.5%;
-    /* border: 1px solid black;
-    border-radius: 10px; */
+    padding: 0%;
+    border: 3px solid black;
+}
+
+#addToDo{
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    border: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+i{
+    float: right;
 }
 
 ul{
@@ -28,6 +43,7 @@ li{
     width: inherit;
     margin: 0;
     padding: 5px 2px;
+    font-size: large;
 }
 
 li:nth-of-type(2n){
