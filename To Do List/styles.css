@@ -23,6 +23,10 @@ body{
     transition: 0.5s;
 }
 
+.collapse{
+    line-height: 0;
+}
+
 .fa-plus-circle{
     float: right;
 }
@@ -37,7 +41,7 @@ body{
     display: inline-block;
     transition: 0.5s;
     text-align: right;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
 .delIcons:hover{
@@ -79,4 +83,10 @@ span{
     padding: 0;
     height: 40px;
     font-size: 20px;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    color: grey;
 }
