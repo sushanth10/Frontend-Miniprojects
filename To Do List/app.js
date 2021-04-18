@@ -1,8 +1,9 @@
 let plusIcon = document.querySelector(".fa-plus-circle");
 let delIcons = document.querySelectorAll(".delIcons");
 let addTodoInput = document.querySelector("input");
-let listOfTodos = [];
-let listOfLis = document.querySelectorAll(".todos");
+let Todos = [];
+let list = document.querySelector(".list");
+let LIs = document.querySelectorAll(".todos");
 let spans = document.querySelectorAll("span");
 
 plusIcon.addEventListener("click", function () {
@@ -14,22 +15,40 @@ plusIcon.addEventListener("click", function () {
     }
 });
 
-for (let todo of listOfLis) {
-    listOfTodos.push(todo.textContent);
-}
-
-for (let ind = 0; ind < delIcons.length; ind++) {
-    let delIcon = delIcons[ind];
-    delIcon.addEventListener("click", function () {
-        listOfLis[ind + 1].remove();
-        listOfTodos.splice(ind, 1);
-        console.log(listOfTodos);
-    });
+for (let li of LIs) {
+    Todos.push(li.textContent);
 }
 
 for (let ind = 0; ind < delIcons.length; ind++) {
     let sp = spans[ind];
     sp.addEventListener("click", function () {
         sp.classList.toggle("completed");
+    });
+}
+
+
+addTodoInput.addEventListener("keypress", function(evt){
+    if(evt.keyCode === 13){
+        var toAdd = addTodoInput.value;
+        Todos.push(toAdd);
+        addLI = document.createElement("li");
+        addLI.classList.add("todos");
+        delIcon = "<i class='fas fa-trash-alt delIcons'></i><span>";
+        addLI.innerHTML += delIcon+toAdd+"</span>";
+        // console.log(addLI);
+        addTodoInput.value = "";
+        list.appendChild(addLI);
+        // delIcon.appendChild(delIcons);
+        delIcons.length+=1;
+        LIs.length+=1;
+    }
+});
+
+
+for(let i=0; i<delIcons.length; i++){
+    delIcons[i].addEventListener("click", function(){
+        Todos = Todos.splice(i,1);
+        LIs[i].parentElement.removeChild(LIs[i]);
+        // console.log(Todos, "\n", LIs, "\n\n");
     });
 }
