@@ -27,27 +27,25 @@ for (let ind = 0; ind < delIcons.length; ind++) {
 }
 
 
-addTodoInput.addEventListener("keypress", function(evt){
-    if(evt.keyCode === 13){
+addTodoInput.addEventListener("keypress", function (evt) {
+    if (evt.keyCode === 13) {
         var toAdd = addTodoInput.value;
         Todos.push(toAdd);
         addLI = document.createElement("li");
         addLI.classList.add("todos");
         delIcon = "<i class='fas fa-trash-alt delIcons'></i><span>";
-        addLI.innerHTML += delIcon+toAdd+"</span>";
+        addLI.innerHTML += delIcon + toAdd + "</span>";
         // console.log(addLI);
         addTodoInput.value = "";
         list.appendChild(addLI);
         // delIcon.appendChild(delIcons);
-        delIcons.length+=1;
-        LIs.length+=1;
     }
 });
 
 
-for(let i=0; i<delIcons.length; i++){
-    delIcons[i].addEventListener("click", function(){
-        Todos = Todos.splice(i,1);
+for (let i = 0; i < delIcons.length; i++) {
+    delIcons[i].addEventListener("click", function () {
+        Todos = Todos.splice(i, 1);
         LIs[i].parentElement.removeChild(LIs[i]);
         // console.log(Todos, "\n", LIs, "\n\n");
     });
