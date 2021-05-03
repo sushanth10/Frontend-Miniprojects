@@ -17,10 +17,17 @@ body{
     -webkit-transition: background 0.5s;
 }
 
-#container{
+.container{
     color: white; 
     background-color: #6a040f;
-    max-width: 400px;
+    max-width: 30%;
+    margin: 35%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.title-container{
+    margin: 0px;
 }
 
 #great{
