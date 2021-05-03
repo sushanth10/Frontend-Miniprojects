@@ -1,0 +1,89 @@
+body{
+    background-color: #03071e;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+}
+
+.square{
+    width: 30%;
+    background: #03071e;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 10%;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+}
+
+#container{
+    color: white; 
+    background-color: #6a040f;
+    max-width: 400px;
+}
+
+#great{
+    background-color: #370617;
+    color: white;
+    margin: none;
+    font-size: 125%;
+}
+
+h1{
+    color: white;
+    font-weight: normal;
+    background-color: #03071e;
+    line-height: 1.1;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #6a040f;
+    text-transform: uppercase;
+}
+ 
+#stripe{
+    background-color: #d00000;
+    height: 30px;
+    text-align: center;
+    color: #03071e;
+    margin: 0px;
+}
+
+.selected{
+    background-color: #03071e;
+    color: white;
+}
+
+#message{
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    font-size: 18px;
+    background-color: #dc2f02;
+    color: white;
+}
+
+#colordisplay{
+    padding: 10px;
+    font-size: 150%;
+    background-color: #9d0208 ;
+    margin: 0px;
+}
+
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.5s;
+    outline-color: steelblue;
+}
+
+button:hover{
+    color: white;
+    background-color: #03071e;
+}
