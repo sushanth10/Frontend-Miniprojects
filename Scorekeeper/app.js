@@ -8,8 +8,8 @@ let combobox = document.querySelector("select");
 var P1Score = parseInt(P1ScoreDisplay.textContent);
 let P2Score = parseInt(P1ScoreDisplay.textContent);
 
-function numberGenerate(){
-    for(let i=1; i<=21; i++){
+function numberGenerate() {
+    for (let i = 1; i <= 21; i++) {
         combobox.innerHTML += `<option value=${i}> ${i} </option>`
     }
 }
@@ -17,7 +17,7 @@ function numberGenerate(){
 play1IncBtn.addEventListener("click", function () {
     P1Score += 1;
     P1ScoreDisplay.textContent = P1Score;
-    if(P1Score==scoreLimit){
+    if (P1Score == scoreLimit) {
         play1IncBtn.disabled = true;
         play2IncBtn.disabled = true;
         P1ScoreDisplay.classList.add("winner");
@@ -25,10 +25,10 @@ play1IncBtn.addEventListener("click", function () {
     }
 });
 
-play2IncBtn.addEventListener("click", function(){
-    P2Score+=1;
+play2IncBtn.addEventListener("click", function () {
+    P2Score += 1;
     P2ScoreDisplay.textContent = P2Score;
-    if(P2Score==scoreLimit){
+    if (P2Score == scoreLimit) {
         play2IncBtn.disabled = true;
         play1IncBtn.disabled = true;
         P1ScoreDisplay.classList.add("loser");
@@ -36,7 +36,7 @@ play2IncBtn.addEventListener("click", function(){
     }
 });
 
-resetBtn.addEventListener("click", function(){
+resetBtn.addEventListener("click", function () {
     P1Score = P2Score = 0;
     P1ScoreDisplay.textContent = P1Score;
     P2ScoreDisplay.textContent = P2Score;
@@ -48,7 +48,7 @@ resetBtn.addEventListener("click", function(){
     play2IncBtn.disabled = false;
 });
 
-function scoreLim(){
+function scoreLim() {
     scoreLimit = combobox.value;
     console.log(scoreLimit);
 }
