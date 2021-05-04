@@ -1,5 +1,6 @@
 # Frontend-Miniprojects
 A collection of beginner level frontend webpages. 
+
 These are very basic webpages which I used to explore HTML layouts, Bootstrap components, CSS properties and layouts and adding simple functionality to these web pages using VanillaJS.
 
 # Technologies used: 
